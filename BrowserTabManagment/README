@@ -1,0 +1,49 @@
+Bahaciu Raisa-Georgiana 313CC
+
+Codul se foloseste de mai multe functii pentru a indeplini cerintele
+
+functii auxiliare:
+    find_page
+        returneaza un pointer la pagina cu id ul cautat si null daca id ul nu exista in vectorul de pagini
+    add_in_browser_list
+        functia primeste un browser b si un tab t si adauga t in b->list, t devine b->currentTab
+    find_tab
+        functia primeste un browser si un id (id ul unui tab pe care vrem sa il gasim)
+        functia parcurge b->list pana cand gaseste id ul sau pana cand ajunge a doua oara la santinela
+        in cazul in care a gasit tabul il returneaza,altfel printeaza eroarea si returneaza null
+    push si pop
+        functiile clasice auxiliare pentru push si pop in stiva/stack
+    print_stiva
+        functia primeste o variabila de tip stack si o printeaza de la last in la first in in ordinea inlantuirii
+    forword_reversed
+        functia creeaza un stack aux nou care va fi stack ul trimis(forwardStack) invers(de la first in la last in) iar dupa 
+        il trimite in print_stiva pentru afisare. la final recreeaza stack ul original inapoi 
+    create_browser
+        functia returneaza un browser initializat cu santinela si pagina 0 ca pagina curenta
+
+functii pricipale:
+    NEW_TAB 
+        creeaza un nou tab si il adauga in b->list
+    CLOSE
+        inchide tabul curent,reface legaturile,verificand la inceput daca se vrea inchidera tabului default 0 si prevenind
+        acest lucru
+    OPEN
+        dechide tabul cu id ul primit
+    PRINT
+        afiseaza id urile taburilor deschise si descrierea paginii curente a tabului curent
+    NEXT
+        se deschide în browser tabul care urmează în listă după tabul curent
+    PREV
+        se deschide în browser tabul care se află în listă înaintea tabului curent.
+    NEW_PAGE
+        in tabul curent se deschide pagina cu ID-ul specificat. Dacă nu există o pagină cu acest
+        ID, se va afis,a mesajul de eroare.
+    BACKWARD
+        in tabul curent, se va accesa ultima pagină adăugată în stiva Backward
+    FORWARD
+        in tabul curent, se va accesa ultima pagină adăugată în stiva Forward
+        PRINT_HISTORY
+    identify_command
+        primeste un char cu comanda,o identifica si apeleaza functie specifica
+    read_file
+        citeste din file paginile si comenzile

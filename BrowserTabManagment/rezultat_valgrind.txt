@@ -1,0 +1,29 @@
+==12369== 17 bytes in 1 blocks are definitely lost in loss record 1 of 12
+==12369==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12369==    by 0x10A2A5: read_file (in /home/bahac/checker/tema1)
+==12369==    by 0x10A5C3: main (in /home/bahac/checker/tema1)
+==12369== 
+==12369== 24 bytes in 1 blocks are definitely lost in loss record 4 of 12
+==12369==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12369==    by 0x1093E8: add_in_browser_list (in /home/bahac/checker/tema1)
+==12369==    by 0x109EE5: create_browser (in /home/bahac/checker/tema1)
+==12369==    by 0x10A56E: main (in /home/bahac/checker/tema1)
+==12369== 
+==12369== 432 (16 direct, 416 indirect) bytes in 1 blocks are definitely lost in loss record 10 of 12
+==12369==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12369==    by 0x109E64: create_browser (in /home/bahac/checker/tema1)
+==12369==    by 0x10A56E: main (in /home/bahac/checker/tema1)
+==12369== 
+==12369== 536 (48 direct, 488 indirect) bytes in 2 blocks are definitely lost in loss record 11 of 12
+==12369==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12369==    by 0x109455: add_in_browser_list (in /home/bahac/checker/tema1)
+==12369==    by 0x109596: NEW_TAB (in /home/bahac/checker/tema1)
+==12369==    by 0x109F65: identify_command (in /home/bahac/checker/tema1)
+==12369==    by 0x10A4E0: read_file (in /home/bahac/checker/tema1)
+==12369==    by 0x10A5C3: main (in /home/bahac/checker/tema1)
+==12369== 
+==12369== 891 bytes in 37 blocks are definitely lost in loss record 12 of 12
+==12369==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12369==    by 0x10A3EC: read_file (in /home/bahac/checker/tema1)
+==12369==    by 0x10A5C3: main (in /home/bahac/checker/tema1)
+==12369== 
